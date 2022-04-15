@@ -1,1 +1,23 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+/* Base */
+/* ==== Variables ===== */
+/* Main Body */
+/* Navbar */
+/* Buttons */
+/* Components */
+/* Body */
+body {
+  background-color: #CAE9FF;
+}
+
+/* Navbar */
+nav {
+  background-color: #1F7A8C !important;
+}
+
+/* Buttons */
+.button-main {
+  background-color: #59d1e0;
+}
+
+/* Layout */
+/*# sourceMappingURL=main.css.map */
