@@ -1,5 +1,6 @@
 <?php
 
+
 //Theme Files
 function themeFiles() {
 
@@ -21,9 +22,31 @@ add_theme_support('post-thumbnails');
 //After Setup Theme Support
 function wpdocs_after_setup_theme() {
     add_theme_support( 'html5', array( 'search-form' ) );
+
+    //Custom Logo
+    add_theme_support( 'custom-logo');
+    add_image_size('headerLogo', 60, 60, true);
+    add_image_size('footerLogo', 250, 250, true);
 }
 
 add_action( 'after_setup_theme', 'wpdocs_after_setup_theme' );
+
+//Widgets
+function custom_widgets() {
+
+    register_sidebar(array(
+        'name' => 'Footer Widgets',
+        'id' => 'footer_widgets',
+        'before_widget' => '<div class="col-lg-3 col-md-6 col-sm-6 mb-2">',
+        'after_widget' => '</div>',
+        'before_title' => '<h4 class="fs-5 list-title">',
+        'after_title' => '</h4><hr>'
+    ));
+
+}
+
+add_action('widgets_init', 'custom_widgets');
+
 
 // bootstrap 5 wp_nav_menu walker
 class bootstrap_5_wp_nav_menu_walker extends Walker_Nav_menu

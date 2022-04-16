@@ -11,10 +11,10 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 
-<nav class="navbar navbar-expand-lg navbar-dark border-bottom border-black small custom-nav border-bottom">
+<nav class="navbar navbar-expand-lg navbar-dark custom-nav border-bottom">
   <div class="container">
     <a class="navbar-brand" href="<?php echo site_url('/') ?>">
-        Paws
+        <?php echo wp_get_attachment_image(get_theme_mod( 'custom_logo' ), 'headerLogo') ?> 
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

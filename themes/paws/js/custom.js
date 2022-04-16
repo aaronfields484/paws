@@ -1,6 +1,6 @@
 
 
 ( function( $ ) {
-	// Site title and description.
 	
+	$('footer ul').addClass('list-style');
 }( jQuery ) );

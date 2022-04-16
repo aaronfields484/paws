@@ -2,7 +2,8 @@
 /* ==== Variables ===== */
 /* Main Body */
 /* Navbar */
-/* Buttons */
+/* Buttons & Links */
+/* Footer */
 /* Components */
 /* Body */
 body {
@@ -11,7 +12,7 @@ body {
 
 /* Navbar */
 nav {
-  background-color: #1F7A8C !important;
+  background-color: #1F7A8C;
 }
 
 /* Buttons */
@@ -19,5 +20,64 @@ nav {
   background-color: #59d1e0;
 }
 
+/* Footers */
+footer {
+  background-color: #1F7A8C;
+  color: #fff;
+  text-align: left;
+  /* Get rid of after test */
+  margin-top: 80vh;
+}
+
+footer .copyright-footer {
+  background-color: #12444e;
+}
+
+footer li {
+  margin: 3px auto;
+}
+
+footer hr {
+  width: 25%;
+}
+
+.list-style {
+  list-style: none;
+  font-weight: 400;
+  font-size: 1rem;
+  color: white;
+  padding-left: 0;
+}
+
+.list-style a {
+  color: white;
+  text-decoration: none;
+}
+
+.list-style a:hover {
+  color: #59d1e0;
+}
+
+.footer-desc {
+  max-width: 70%;
+}
+
+.list-title {
+  font-weight: 600;
+}
+
 /* Layout */
+/* Footer Layout */
+@media (max-width: 768px) {
+  footer {
+    text-align: center;
+  }
+  footer hr {
+    margin: auto;
+    width: 15%;
+  }
+  .footer-desc {
+    margin: auto;
+  }
+}
 /*# sourceMappingURL=main.css.map */
