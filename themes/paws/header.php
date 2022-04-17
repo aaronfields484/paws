@@ -34,7 +34,7 @@
     <form role="search" action="/" method="" class="d-flex">
         <div class="ml-auto input-group">
             <input name="s" value="<?php echo get_search_query() ?>" type="search" class="form-control form-control-sm" placeholder="Search For" aria-label="Recipient's username" aria-describedby="button-addon2">
-            <button class="btn  button-main" type="submit">
+            <button class="btn button-main" type="submit">
                 Search
             </button>
         </div>
