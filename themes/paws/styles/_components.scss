@@ -1,3 +1,35 @@
+/* Header */
+.main-banner {
+
+    background-image: url('../img/main-banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 90vh;
+    margin: 0;
+
+    .main-banner__content {
+
+        position: relative;
+        top: 30%;
+        
+        h3 {
+
+            width: 60%;
+        }
+    }
+}
+
+.main-banner__subtitle {
+
+    border-left: #219EBC 6px solid;
+    background-color: #c4c4c448;
+    min-width: 30%;
+    max-width: 35%;
+    padding: 10px 20px;
+}
+
 /* Body */
 body {
 
@@ -8,6 +40,11 @@ body {
 nav {
 
     background-color: $navbar-background;
+
+    a:hover {
+
+        color: $text-hover !important;
+    }
 }
 
 /* Buttons */
@@ -23,8 +60,6 @@ footer {
     background-color: $footer-background;
     color: #fff;
     text-align: left;
-    /* Get rid of after test */
-    margin-top: 80vh;
 
     .copyright-footer {
 

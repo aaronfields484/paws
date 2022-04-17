@@ -17,5 +17,20 @@
 
         margin: auto;
     }
+
+    .main-banner {
+
+        height: 60vh;
+        background-attachment: unset;
+    }
+
+    .main-banner__content {
+
+       display: flex;
+       justify-content: center;
+       flex-wrap: wrap;
+       text-align: center;
+       row-gap: 15px;
+    }
     
 }
