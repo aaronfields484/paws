@@ -11,7 +11,7 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 
-<nav class="navbar navbar-expand-lg navbar-dark custom-nav border-bottom">
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark custom-nav">
   <div class="container">
     <a class="navbar-brand" href="<?php echo site_url('/') ?>">
         <?php echo wp_get_attachment_image(get_theme_mod( 'custom_logo' ), 'headerLogo') ?> 

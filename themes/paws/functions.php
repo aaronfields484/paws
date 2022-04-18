@@ -8,6 +8,7 @@ function themeFiles() {
     wp_enqueue_style('main-style', get_template_directory_uri() . '/styles/main.css');
 
     wp_enqueue_script('custom-js', get_template_directory_uri() . '/js/custom.js', array('jquery'), true, true);
+    wp_enqueue_script('main-js', get_template_directory_uri() . '/js/main.js', array('jquery'), true, true);
     wp_enqueue_script('bootstrap-js', '//cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js', array('jquery'), true, true);
 }
 
