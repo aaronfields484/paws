@@ -44,6 +44,7 @@ nav {
     width: 100%;
     z-index: 2;
     transition: background-color 0.3s;
+    top: 0;
 
     &:hover {
 
@@ -157,7 +158,19 @@ footer {
 
     a {
 
-        width: 15%;
+        min-width: 185px;
+        padding: 1em;
+    }
+}
+
+.featured-category__button {
+
+    margin: auto;
+    text-align: center;
+
+    a {
+
+        width: 165px;
         padding: 1em;
     }
 }
@@ -199,4 +212,34 @@ footer {
     }
 
     transition: all 0.3s ease-in-out;
+}
+
+/* Category */
+
+.f-category__title {
+
+    background-color: #1f7a8cbe;
+    width: 200px;
+    text-align: center;
+    position: relative;
+    bottom: 35px;
+}
+
+.f-category {
+
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+
+    &:hover img{
+
+        transform: scale(1.1) rotate(4deg);
+        filter: opacity(0.4) drop-shadow(0 0 0 #1f7a9cbe); 
+        transition: all 0.15s ease-in-out;
+    }
+
+    img {
+
+        transition: all 0.3s ease-in-out;
+    }
 }

@@ -86,4 +86,31 @@
         </div>
     </section>
 
+    <section class="front-page__featured-categories pt-5 pb-3">
+        <div class="container">
+            <div class="front-page__heading">
+               <h2>Featured Posts</h2>
+               <hr>
+               <h5>Lorem ipsum dolor sit.</h5>
+            </div>
+            <div class="featured-categories pb-5">
+                <div class="f-category">
+                    <img src="<?php echo get_template_directory_uri() ?>/img/category-placeholder.jpg" alt="" width="200px" height="200px">
+                    <h6 class="py-2 f-category__title text-light">Category Name</h6>
+                </div>
+                <div class="f-category">
+                    <img src="<?php echo get_template_directory_uri() ?>/img/category-placeholder.jpg" alt="" width="200px" height="200px">
+                    <h6 class="py-2 f-category__title text-light">Category Name</h6>
+                </div>
+                <div class="f-category">
+                    <img src="<?php echo get_template_directory_uri() ?>/img/category-placeholder.jpg" alt="" width="200px" height="200px">
+                    <h6 class="py-2 f-category__title text-light">Category Name</h6>
+                </div>
+            </div>
+            <div class="featured-category__button pt-3 pb-5">
+                <a href="#" class="btn button-secondary text-light">Learn More</a>
+            </div>
+        </div>
+    </section>
+
 <?php get_footer() ?>
