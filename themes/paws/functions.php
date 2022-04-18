@@ -27,7 +27,7 @@ function wpdocs_after_setup_theme() {
     //Custom Logo
     add_theme_support( 'custom-logo');
     add_image_size('headerLogo', 60, 60, true);
-    add_image_size('footerLogo', 250, 250, true);
+    add_image_size('footerLogo', 200, 200, true);
 }
 
 add_action( 'after_setup_theme', 'wpdocs_after_setup_theme' );
