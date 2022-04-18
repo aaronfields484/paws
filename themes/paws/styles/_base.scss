@@ -14,3 +14,11 @@ $text-hover: #59d1e0;
 /* Footer */
 $footer-background: #1F7A8C;
 $copyright-footer: #12444e;
+
+
+/* Functions */
+
+@function btnHover($btn) {
+    
+    @return darken($btn, 12%);
+}

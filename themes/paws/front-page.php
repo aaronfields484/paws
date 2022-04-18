@@ -42,9 +42,9 @@
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Augue lacus viverra vitae congue.</p>
                     </div>
                     <div class="mt-4 card-body featured-post__tags">
-                        <span class="px-3 py-2 badge bg-secondary">Tag</span>
-                        <span class="px-3 py-2 badge bg-secondary">Tag</span>
-                        <span class="px-3 py-2 badge bg-secondary">tag</span>
+                        <span class="post-tag px-3 py-2 badge btn-secondary">Tag</span>
+                        <span class="post-tag px-3 py-2 badge btn-secondary">Tag</span>
+                        <span class="post-tag px-3 py-2 badge btn-secondary">Tag</span>
                     </div>
                 </div>
                 <div class="card" style="width: 23rem;">
@@ -58,9 +58,9 @@
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Augue lacus viverra vitae congue.</p>
                     </div>
                     <div class="mt-4 card-body featured-post__tags">
-                        <span class="px-3 py-2 badge bg-secondary">Tag</span>
-                        <span class="px-3 py-2 badge bg-secondary">Tag</span>
-                        <span class="px-3 py-2 badge bg-secondary">tag</span>
+                        <span class="post-tag px-3 py-2 badge btn-secondary">Tag</span>
+                        <span class="post-tag px-3 py-2 badge btn-secondary">Tag</span>
+                        <span class="post-tag px-3 py-2 badge btn-secondary">Tag</span>
                     </div>
                 </div>
                 <div class="card" style="width: 23rem;">
@@ -74,9 +74,9 @@
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Augue lacus viverra vitae congue.</p>
                     </div>
                     <div class="mt-4 card-body featured-post__tags">
-                        <span class="px-3 py-2 badge bg-secondary">Tag</span>
-                        <span class="px-3 py-2 badge bg-secondary">Tag</span>
-                        <span class="px-3 py-2 badge bg-secondary">tag</span>
+                        <span class="post-tag px-3 py-2 badge btn-secondary">Tag</span>
+                        <span class="post-tag px-3 py-2 badge btn-secondary">Tag</span>
+                        <span class="post-tag px-3 py-2 badge btn-secondary">Tag</span>
                     </div>
                 </div>
             </div>

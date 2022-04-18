@@ -4,6 +4,7 @@
 /* Navbar */
 /* Buttons & Links */
 /* Footer */
+/* Functions */
 /* Components */
 /* Header */
 .main-banner {
@@ -28,7 +29,7 @@
 .main-banner__subtitle {
   border-left: #219EBC 6px solid;
   background-color: #c4c4c448;
-  min-width: 30%;
+  min-width: 12em;
   max-width: 35%;
   padding: 10px 20px;
 }
@@ -40,7 +41,7 @@ body {
 
 /* Navbar */
 nav {
-  background-color: transparent;
+  background-color: #1F7A8C;
   position: fixed !important;
   width: 100%;
   z-index: 2;
@@ -66,8 +67,16 @@ nav a:hover {
   background-color: #59d1e0;
 }
 
+.button-main:hover {
+  background-color: #28c1d4;
+}
+
 .button-secondary {
   background-color: #1F7A8C;
+}
+
+.button-secondary:hover {
+  background-color: #144e5a;
 }
 
 /* Footers */
@@ -207,8 +216,8 @@ footer hr {
 .f-category:hover img {
   -webkit-transform: scale(1.1) rotate(4deg);
           transform: scale(1.1) rotate(4deg);
-  -webkit-filter: opacity(0.4) drop-shadow(0 0 0 #1f7a9cbe);
-          filter: opacity(0.4) drop-shadow(0 0 0 #1f7a9cbe);
+  -webkit-filter: opacity(0.4) drop-shadow(0 0 0 #1f7a9cbe) brightness(0.75);
+          filter: opacity(0.4) drop-shadow(0 0 0 #1f7a9cbe) brightness(0.75);
   -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
