@@ -1,5 +1,7 @@
 <?php
 
+//Customizers
+require get_theme_file_path('/inc/customizer.php');
 
 //Theme Files
 function themeFiles() {
