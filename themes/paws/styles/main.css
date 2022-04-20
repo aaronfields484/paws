@@ -164,10 +164,14 @@ footer hr {
 
 .title-link {
   color: #1F7A8C;
+  text-decoration: none;
+  list-style: none;
+  display: inline;
 }
 
 .title-link:hover {
   text-decoration: underline;
+  color: #165662;
 }
 
 .card-post-date {

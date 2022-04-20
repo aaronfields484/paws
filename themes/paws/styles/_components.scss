@@ -188,11 +188,16 @@ footer {
 
 .title-link {
 
+
     color: $footer-background;
+    text-decoration: none;
+    list-style: none;
+    display: inline;
 
     &:hover {
 
         text-decoration: underline;
+        color: darken($footer-background, 10%)
     }
 }
 
