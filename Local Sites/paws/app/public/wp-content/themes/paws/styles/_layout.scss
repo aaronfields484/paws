@@ -1,0 +1,59 @@
+/* Footer Layout */
+
+@media (max-width: 768px) {
+
+    footer {
+
+        text-align: center;
+
+        hr {
+
+            margin: auto;
+            width: 15%;
+        }
+    }
+
+    .footer-desc {
+
+        margin: auto;
+    }
+
+    .main-banner {
+
+        height: 60vh;
+        background-attachment: unset;
+    }
+
+    .main-banner__content {
+
+       display: flex;
+       justify-content: center;
+       flex-wrap: wrap;
+       text-align: center;
+       row-gap: 15px;
+    }
+    
+}
+
+/* Featured Posts Cards */
+
+.featured-posts {
+
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 25px;
+    row-gap: 15px;
+}
+
+/* Featured Categories */
+.featured-categories {
+
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    row-gap: 15px;
+}
+

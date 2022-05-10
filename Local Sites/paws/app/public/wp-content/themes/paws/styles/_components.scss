@@ -1,0 +1,264 @@
+/* Header */
+.main-banner {
+
+    background-image: url('../img/main-banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 90vh;
+    margin: 0;
+
+    .main-banner__content {
+
+        position: relative;
+        top: 30%;
+        
+        h3 {
+
+            width: 60%;
+        }
+    }
+}
+
+.main-banner__subtitle {
+
+    border-left: #219EBC 6px solid;
+    background-color: #c4c4c448;
+    min-width: 12em;
+    max-width: 35%;
+    padding: 10px 20px;
+}
+
+/* Body */
+body {
+
+    background-color: $background-color;
+}
+
+/* Navbar */
+nav {
+
+    background-color: $navbar-background;
+    position: fixed !important;
+    width: 100%;
+    z-index: 2;
+    transition: background-color 0.3s;
+    top: 0;
+
+    &:hover {
+
+        background-color: $navbar-background;  
+    }
+
+    a:hover {
+
+        color: $text-hover !important;
+    }
+}
+
+.navbar-background {
+
+    background-color: $navbar-background;
+}
+
+/* Buttons */
+.button-main {
+
+    background-color: $button-main;
+
+    &:hover {
+
+        background-color: btnHover($button-main);
+    }
+}
+
+.button-secondary {
+
+    background-color: $footer-background;
+
+    &:hover {
+
+        background-color: btnHover($footer-background);
+    }
+}
+
+/* Footers */
+
+footer {
+
+    background-color: $footer-background;
+    color: #fff;
+    text-align: left;
+
+    .copyright-footer {
+
+        background-color: $copyright-footer;
+    }
+
+    li {
+
+        margin: 3px auto;  
+    }
+
+    hr {
+
+        width: 35%;
+    }
+}
+
+.list-style {
+  
+    list-style: none; 
+    font-weight: 400;
+    font-size: 1rem;
+    color: white;
+    padding-left: 0;
+
+    a {
+        color: white;
+        text-decoration: none;
+        &:hover {
+
+            color: $text-hover;
+        }
+    }
+
+}
+
+
+.footer-desc {
+
+    max-width: 70%;
+}
+
+.list-title {
+
+    font-weight: 600;
+}
+
+/*==== Sections ====*/
+
+/* Featured Section */
+
+.front-page__featured-posts {
+
+    background-color: $secondary-background;
+}
+
+.front-page__heading {
+
+    text-align: center;
+    margin: auto;
+
+    hr {
+
+        max-width: 6%;
+        border: 4px solid $footer-background;
+        color: $footer-background;
+        margin: 8px auto;
+        opacity: 1;
+    }
+}
+
+.featured-post__button {
+
+    margin: auto;
+    text-align: center;
+
+    a {
+
+        min-width: 185px;
+        padding: 1em;
+    }
+
+}
+
+.featured-category__button {
+
+    margin: auto;
+    text-align: center;
+
+    a {
+
+        width: 165px;
+        padding: 1em;
+    }
+}
+
+.title-link {
+
+    color: $footer-background;
+
+    &:hover {
+
+        text-decoration: underline;
+    }
+}
+
+.card-post-date {
+
+    position: absolute;
+    top: 2.5em;
+    background-color: $secondary-background;
+    padding: 0.3em;
+    margin: 0;
+    min-width: 8em;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+
+/* Card */
+
+.card {
+
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+
+    &:hover {
+
+        box-shadow: 10px 15px 20px rgba(108, 117, 125, 0.90);
+        transform: scale(1.05, 1.05);
+        transition: all 0.15s ease-in-out;
+    }
+
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* Category */
+
+.f-category__title {
+
+    background-color: #1f7a8cbe;
+    width: 200px;
+    text-align: center;
+    position: relative;
+    bottom: 35px;
+}
+
+.f-category {
+
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+
+    &:hover img{
+
+        transform: scale(1.1) rotate(4deg);
+        filter: opacity(0.4) drop-shadow(0 0 0 #1f7a9cbe) brightness(0.75); 
+        transition: all 0.15s ease-in-out;
+    }
+
+    img {
+
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+// about-pagecontent
+.about-page{
+    p{
+        color: blue;
+    }
+}
