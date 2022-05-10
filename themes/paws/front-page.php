@@ -4,7 +4,7 @@
         <div class="main-banner__content container text-light">
             <h5 class="main-banner__subtitle"><?php echo get_theme_mod( 'banner-subtitle', 'Lorem, ipsum dolor.' ); ?></h6>
             <h1 class="main-banner__title"><?php echo get_theme_mod( 'banner-title', 'Lorem ipsum dolor sit amet.' ); ?></h1>
-            <h3 class="main-banner__desc"><?php echo get_theme_mod( 'banner-des ', 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, fugit!' ); ?></h3>
+            <h3 class="main-banner__desc"><?php echo get_theme_mod( 'banner-desc', 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, fugit!' ); ?></h3>
         </div>
     </header>
 
@@ -26,7 +26,7 @@
                     <?php if(get_the_post_thumbnail_url($aboutPage->ID)) { ?>
                     <img src="<?php echo get_the_post_thumbnail_url($aboutPage->ID)?>" class="img-fluid rounded" alt="about-image">
                     <?php } else { ?>
-                    <img src="<?php get_template_directory_uri() ?>/img/about-placeholder.jpg class="img-fluid rounded" alt="about-image">
+                    <img src="<?php echo get_template_directory_uri() ?>/img/about-placeholder.jpg" class="img-fluid rounded" alt="about-image">
                     <?php } ?>
                 </div>
             </div>
@@ -49,7 +49,7 @@
         <div class="container">
             <div class="front-page__heading">
                <h2 class="featured-posts__title"><?php echo get_theme_mod( 'post-title', 'Featured Posts' ); ?></h2>
-               <hr>
+               <hr class="content-divider">
                <h5 class="featured-posts__subtitle"><?php echo get_theme_mod( 'post-subtitle', 'Lorem ipsum dolor sit.' ); ?></h5>
             </div>
 
@@ -65,7 +65,7 @@
                         <?php } else { ?>
                         <img src="<?php echo get_template_directory_uri() ?>/img/featured-post-placeholder.jpg" class="img-fluid rounded" alt="post image">
                         <?php } ?>
-                        <p class="mt-3">By <strong><a class="title-link" href="<?php echo esc_url(get_author_posts_url(get_the_ID())); ?>"><?php the_author() ?></a></strong> in<strong class="cat-link"> <a href="<?php echo esc_url(get_category_link(get_the_category())); ?>"><?php the_category(', ') ?></a></strong></p>
+                        <p class="mt-3">By <strong><a class="title-link" href="<?php echo esc_url(get_author_posts_url(get_the_author_ID())); ?>"><?php the_author() ?></a></strong> in<strong class="cat-link"> <a href="<?php echo esc_url(get_category_link(get_the_category())); ?>"><?php the_category(', ') ?></a></strong></p>
                     </div>
                     <div class="card-body ps-4">
                         <h5 class="card-title"><?php the_title() ?></h5>
@@ -85,7 +85,7 @@
             <?php }  ?>
             </div>
             <div class="featured-post__button py-5">
-                <a href="<?php site_url('/blog') ?>" class="btn button-secondary text-light">Learn More</a>
+                <a href="<?php site_url('/') ?>/blog" class="btn button-secondary text-light">See More</a>
             </div>
         </div>
     </section>
@@ -94,7 +94,7 @@
         <div class="container">
             <div class="front-page__heading">
                <h2 class="featured-categories__title"><?php echo get_theme_mod( 'category-title', 'Featured Categories' ); ?></h2>
-               <hr>
+               <hr class="content-divider">
                <h5 class="featured-categories__subtitle"><?php echo get_theme_mod( 'category-subtitle', 'Check out some of our categories' ); ?></h5>
             </div>
             <div class="featured-categories pb-5">
@@ -114,20 +114,22 @@
                 ?>
                     
                     <a class="text-decoration-none text-light" href="<?php echo get_category_link($cat[$i]->term_id); ?>">
-                        <div class="f-category">
-                            <?php if(get_field('category_image', $cat[$i])) { ?>
-                            <img src="<?php the_field('category_image', $cat[$i]) ?>" alt="" width="200px" height="200px">
-                            <?php } else {?>
-                            <img src="<?php echo get_template_directory_uri() ?>/img/category-placeholder.jpg" alt="" width="200px" height="200px">
-                            <?php } ?>
-                            <h6 class="py-2 f-category__title text-light cat-image-<?php echo $i; ?>"><?php echo $cat[$i]->cat_name ?></h6>
+                        <div class="f-category__wrapper">
+                            <div class="f-category">
+                                <?php if(get_field('category_image', $cat[$i])) { ?>
+                                <img src="<?php the_field('category_image', $cat[$i]) ?>" alt="" width="200px" height="200px">
+                                <?php } else {?>
+                                <img src="<?php echo get_template_directory_uri() ?>/img/category-placeholder.jpg" alt="" width="200px" height="200px">
+                                <?php } ?>
+                                <h6 class="py-2 f-category__title text-light"><?php echo $cat[$i]->cat_name ?></h6>
+                            </div>
                         </div>
                     </a>
 
                 <?php } ?>
             </div>
             <div class="featured-category__button pt-3 pb-5">
-                <a href="<?php site_url('/category') ?>" class="btn button-secondary text-light">Learn More</a>
+                <a href="<?php site_url('/') ?>/category" class="btn button-secondary text-light">See More</a>
             </div>
         </div>
     </section>

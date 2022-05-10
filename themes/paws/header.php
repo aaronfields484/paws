@@ -9,7 +9,6 @@
 </head>
 
 <body <?php body_class(); ?>>
-<?php wp_body_open(); ?>
 
 <nav id="navbar" class="navbar navbar-expand-lg navbar-dark custom-nav">
   <div class="container">
@@ -26,16 +25,18 @@
                 'container' => false,
                 'menu_class' => '',
                 'fallback_cb' => '__return_false',
-                'items_wrap' => '<ul id="%1$s" class="navbar-nav m-auto mb-2 mb-md-0 %2$s">%3$s</ul>',
+                'items_wrap' => '<ul id="%1$s" class="navbar-nav m-auto pe-5 mb-2 mb-md-0 %2$s">%3$s</ul>',
                 'depth' => 2,
                 'walker' => new bootstrap_5_wp_nav_menu_walker()
             ));
     ?>
-    <form role="search" action="/" method="" class="d-flex">
-        <div class="ml-auto input-group">
-            <input name="s" value="<?php echo get_search_query() ?>" type="search" class="form-control form-control-sm" placeholder="Search For" aria-label="Recipient's username" aria-describedby="button-addon2">
-            <button class="btn button-main" type="submit">
-                Search
+    <form role="search" action="/" method="" class="px-lg-5 search-box d-flex">
+        <div class="search-box">
+            <input name="s" type="text" class="input-search" placeholder="Type to Search..." required>
+            <button class="btn-search">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+            </svg>
             </button>
         </div>
     </form>

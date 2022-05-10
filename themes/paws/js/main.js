@@ -39,3 +39,20 @@ function navScroll(){
 }
 
 window.addEventListener('scroll', navScroll);
+
+//Carousel
+
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1.5,
+    initialSlide: 1,
+    spaceBetween: 10,
+    width: 550,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+});
