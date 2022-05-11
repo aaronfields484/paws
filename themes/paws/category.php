@@ -41,6 +41,7 @@ get_header();
             <?php } ?>
         </ul>
     </div>
+    <?php get_template_part( 'template-parts/content', 'pagination' ); ?>
 </section>
 
 <?php echo get_template_part('template-parts/content', 'more') ?>

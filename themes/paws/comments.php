@@ -5,7 +5,7 @@ if ( post_password_required() ) {
 }
 ?>
 
-<div id="comments" class="p-5 b-secondary rounded comments-area">
+<div id="comments" class="p-3 b-secondary rounded comments-area">
 
 	<?php
 	// You can start editing here -- including this comment!

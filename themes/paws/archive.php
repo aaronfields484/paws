@@ -38,10 +38,10 @@ get_header();
             <?php } ?>
         </ul>
     </div>
-    	
     <?php get_template_part( 'template-parts/content', 'pagination' ); ?>
 </section>
 
+<?php get_template_part( 'template-parts/content', 'more' ); ?>
 
 
 <?php

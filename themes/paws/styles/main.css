@@ -380,6 +380,10 @@ footer hr {
   background-color: #28c1d4;
 }
 
+.comments-area {
+  max-width: 600px;
+}
+
 /* Search Bar */
 .search-box {
   width: -webkit-fit-content;
