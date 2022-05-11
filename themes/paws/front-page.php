@@ -59,7 +59,7 @@
                 ?>
                 <div class="card" style="width: 23rem;">
                     <div class="card-head px-5 pt-4">
-                        <p class="card-post-date"><?php the_date() ?></p>
+                        <p class="card-post-date"><?php echo get_the_date() ?></p>
                         <?php if(has_post_thumbnail()) { ?>
                         <img src="<?php echo get_the_post_thumbnail_url()?>" class="img-fluid rounded" alt="post image">
                         <?php } else { ?>
@@ -69,7 +69,7 @@
                     </div>
                     <div class="card-body ps-4">
                         <h5 class="card-title"><?php the_title() ?></h5>
-                        <p class="card-text"><?php echo  has_excerpt() ? get_the_excerpt('') : wp_trim_words(get_the_content(), 20); ?></p><a class="btn btn-sm button-main" href="<?php the_permalink() ?>">Read more</a>
+                        <p class="card-text"><?php echo has_excerpt() ? get_the_excerpt('') : wp_trim_words(get_the_content(), 20); ?></p><a class="btn btn-sm button-main" href="<?php the_permalink() ?>">Read more</a>
                     </div>
                     
                     <div class="mt-4 card-body featured-post__tags">
