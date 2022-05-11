@@ -55,6 +55,22 @@ body {
     overflow-x: hidden;
 }
 
+/* Background Colors */
+.b-secondary {
+
+    background-color: $button-main;
+}
+
+.b-innerBackground {
+
+    background-color: $background-color;
+
+    &.comment-list {
+
+        max-width: 500px;
+    }
+}
+
 /* Navbar */
 nav {
 
@@ -245,7 +261,6 @@ footer {
 
 .f-category__title {
 
-    background-color: #1f7a8cbe;
     background-color: #1f7a8cbe;
     width: 200px;
     text-align: center;
