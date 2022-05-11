@@ -23,7 +23,6 @@ get_header();
 <?php the_content(); ?>
 </div>
 <?php comments_template(); ?> 
-<p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
 </article> 
     </div>
 </section>

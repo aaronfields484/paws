@@ -55,6 +55,19 @@ body {
   overflow-x: hidden;
 }
 
+/* Background Colors */
+.b-secondary {
+  background-color: #59d1e0;
+}
+
+.b-innerBackground {
+  background-color: #CAE9FF;
+}
+
+.b-innerBackground.comment-list {
+  max-width: 500px;
+}
+
 /* Navbar */
 nav {
   background-color: #1F7A8C;
@@ -212,7 +225,6 @@ footer hr {
 
 /* Category */
 .f-category__title {
-  background-color: #1f7a8cbe;
   background-color: #1f7a8cbe;
   width: 200px;
   text-align: center;
