@@ -1,5 +1,3 @@
-<?php
-// Silence is golden.
 <?php get_header(); ?>
 
 <section class="default-holder mt-3">
