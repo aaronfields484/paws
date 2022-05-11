@@ -56,6 +56,6 @@ if ( post_password_required() ) {
 
 	endif; // Check for have_comments().
 	?>
-	<?php comment_form(); ?>
+	<div class="px-5"><?php comment_form(); ?></div>
 
 </div><!-- #comments -->
