@@ -17,7 +17,7 @@ get_header();
             <hr class="content-divider">
             <h3 class="mt-4">Search Results:</h3>
         </div>
-        <ul class="list-group mb-5">
+        <ul class="list-group mb-5 px-5">
             <?php while(have_posts()) { 
                 the_post();
             ?>
