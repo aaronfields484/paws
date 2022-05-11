@@ -24,7 +24,7 @@
                                 if ( has_post_thumbnail() ) { ?>
                                     <img class="img-fluid rounded" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php echo get_the_title(); ?>">
                                 <?php }else{ ?>
-                                    <img class="img-fluid rounded" src="<?php echo get_template_directory_uri(); ?>/img/Placeholder.jpg" alt="<?php echo get_the_title(); ?>">
+                                    <img class="img-fluid rounded" src="<?php echo get_template_directory_uri(); ?>/img/featured-post-placeholder.jpg" alt="<?php echo get_the_title(); ?>">
                                 <?php }
 
                                 ?>

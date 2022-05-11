@@ -25,7 +25,11 @@ get_header();
                 <li class="archive-content__list list-group-item my-2">
                     <div class="row">
                         <div class="col-lg-3 d-flex align-self-center">
+                        <?php if(has_post_thumbnail()) { ?>
+                        <img src="<?php echo get_the_post_thumbnail_url()?>" class="img-fluid rounded" alt="post image">
+                        <?php } else { ?>
                             <img src="<?php echo get_template_directory_uri() ?>/img/about-placeholder.jpg" class="img-fluid rounded" alt="about-image"> 
+                        <?php } ?>
                         </div>
                         <div class="col d-flex align-self-center flex-wrap mt-3">
                             <h3><?php the_title() ?></h3>
