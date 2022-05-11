@@ -1,6 +1,14 @@
 
 <?php get_header(); ?>
 
+<section class="secondary-banner bg-dark p-5 mb-5">
+    <div class="container">
+        <div class="secondary-banner__content text-light">
+            <h1 class="text-wrap">Blog</h1>
+        </div>
+    </div>
+</section>
+
 <section class="default-holder mt-3">
     <div class="container">
         <div class="row">
